@@ -1,5 +1,6 @@
 package io.result.ui;
 
+import io.qameta.allure.Feature;
 import org.springframework.beans.factory.annotation.Value;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;

@@ -17,22 +17,20 @@ dependencyManagement {
         dependency("com.fasterxml.jackson.core:jackson-databind:2.11.1")
         dependency("org.seleniumhq.selenium:selenium-java:3.13.0")
         dependency("io.qameta.allure:allure-testng:2.13.3")
-        dependency("io.qameta.allure:allure-gradle:2.8.1")
     }
 }
 
 testSets {
     "uiTests"() {
         dependencies {
-            testImplementation("org.springframework:spring-test")/*
-            testImplementation("org.springframework.boot:spring-boot-test")*/
+            testImplementation("org.springframework:spring-test")
+            testImplementation("org.springframework.boot:spring-boot-test")
             testImplementation("org.testng:testng")
             testImplementation("uk.com.robust-it:cloning")
             testImplementation("com.github.javafaker:javafaker")
             testImplementation("org.assertj:assertj-core")
             testImplementation("org.seleniumhq.selenium:selenium-java")
             testImplementation("io.qameta.allure:allure-testng")
-            testImplementation("io.qameta.allure:allure-gradle")
         }
     }
     "apiTests"() {
@@ -53,7 +51,6 @@ testSets {
             testImplementation("org.assertj:assertj-core")
             testImplementation("com.fasterxml.jackson.core:jackson-databind")
             testImplementation("io.qameta.allure:allure-testng")
-            testImplementation("io.qameta.allure:allure-gradle")
         }
     }
 }
